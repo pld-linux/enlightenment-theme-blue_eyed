@@ -9,7 +9,7 @@ Group:		Themes
 Source0:	http://www.get-e.org/Themes/E17/_files/%{_theme}_%{version}.edj
 # Source0-md5:	340967a87b751cef3f71f3a367a6db30
 URL:		http://www.get-e.org/Themes/E17/
-Requires:	enlightenmentDR17
+Requires:	enlightenment
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,13 +23,13 @@ Niebieski i minimalistyczny motyw E17.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/enlightenmentDR17/data/themes
+install -d $RPM_BUILD_ROOT%{_datadir}/enlightenment/data/themes
 
-install %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/enlightenmentDR17/data/themes/%{_theme}.edj
+install %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/enlightenment/data/themes/%{_theme}.edj
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_datadir}/enlightenmentDR17/data/themes/%{_theme}.edj
+%{_datadir}/enlightenment/data/themes/%{_theme}.edj
