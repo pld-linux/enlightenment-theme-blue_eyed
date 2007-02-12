@@ -1,6 +1,6 @@
 %define	_theme	blue_eyed
 Summary:	Blue and minimalistic E17 theme
-Summary(pl):	Niebieski i minimalistyczny motyw E17
+Summary(pl.UTF-8):   Niebieski i minimalistyczny motyw E17
 Name:		enlightenment-theme-%{_theme}
 Version:	0.6.5.g_c
 Release:	1
@@ -16,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Blue and minimalistic E17 theme.
 
-%description -l pl
+%description -l pl.UTF-8
 Niebieski i minimalistyczny motyw E17.
 
 %prep
